@@ -8,11 +8,64 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/bootstrap-icons.svg">
 </head>
 
-<body>
-    <header></header>
-    <main></main>
+<body class="bg-blue-50/50">
+    <header class="xl:max-w-6xl mx-auto px-3 xl:px-0">
+        <nav class="flex justify-between items-center pt-7">
+            <div class="md:grow">
+                <img src="assets/brand-logo.png" alt="brand logo" class="sm:h-16 md:h-auto h-10">
+            </div>
+            <ul class="hidden sm:flex gap-12 items-center md:me-12">
+                <li><a href="#" class="font-bold text-slate-900">Home</a></li>
+                <li><a href="#" class="transition-all text-slate-500 hover:text-slate-900">Shop</a></li>
+                <li><a href="#" class="transition-all text-slate-500 hover:text-slate-900">About us</a></li>
+            </ul>
+            <a href="#" class="transition-all text-slate-900 hover:text-orange-700"><i
+                    class="bi bi-cart3 text-xl"></i><span class="ms-2.5">Cart ($56)</span></a>
+        </nav>
+    </header>
+    <main class="max-w-6xl mx-auto px-3">
+        <!-- hero section -->
+        <section class="md:mt-32 mt-8">
+            <div class="flex items-end md:pt-20 flex-col-reverse md:flex-row">
+                <div class="md:w-1/2">
+                    <div class="md:pe-5">
+                        <h1 class="font-bold md:text-[4.075rem] sm:text-3xl text-2xl uppercase md:mt-0 mt-6">Always
+                            <span class="text-orange-700/80">fresh <br>
+                                flowers</span>
+                        </h1>
+                        <p class="text-gray-950/50 md:text-[1.375rem] text-[1rem]">Indulge your senses with the beauty
+                            and fragrance
+                            of
+                            our
+                            fresh flower
+                            shop. From classic roses to
+                            exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 -mx-3 md:mx-0">
+                    <img class="w-full " src="assets/images/hero-flower.png" alt="hero flower image">
+                </div>
+            </div>
+        </section>
+        <!-- collections section -->
+        <section class="md:mt-32 mt-20">
+            <!-- common section title -->
+            <div class="text-center mx-auto max-w-4xl mb-12">
+                <h3 class="md:text-5xl sm:text-3xl text-2xl mb-4  font-bold"><span
+                        class="text-orange-700/80 md:me-3 me-1.5">Our</span>Plants</h3>
+                <p class="text-gray-950/50 md:text-[1.375rem] text-[1rem]">Indulge your senses with the beauty and
+                    fragrance of our
+                    fresh flower shop.
+                    From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
