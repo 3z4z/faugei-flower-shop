@@ -11,6 +11,25 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/bootstrap-icons.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        h1,
+        h3 {
+            font-family: "Noto Serif", serif;
+        }
+
+        .slow-spin {
+            animation: spin 3s linear infinite;
+        }
+    </style>
 </head>
 
 <body class="bg-blue-50/50">
@@ -28,9 +47,9 @@
                     class="bi bi-cart3 text-xl"></i><span class="ms-2.5">Cart ($56)</span></a>
         </nav>
     </header>
-    <main class="max-w-6xl mx-auto px-3">
+    <main>
         <!-- hero section -->
-        <section class="md:mt-32 mt-8">
+        <section class="max-w-6xl mx-auto px-3 md:mt-32 mt-8">
             <div class="flex items-end md:pt-20 flex-col-reverse md:flex-row">
                 <div class="md:w-1/2">
                     <div class="md:pe-5">
@@ -54,7 +73,7 @@
             </div>
         </section>
         <!-- collections section -->
-        <section class="md:mt-32 mt-20">
+        <section class="max-w-6xl mx-auto px-3 md:mt-32 mt-20">
             <!-- common section title -->
             <div class="text-center mx-auto max-w-4xl mb-12">
                 <h3 class="md:text-5xl sm:text-3xl text-2xl mb-4  font-bold"><span
@@ -64,9 +83,10 @@
                     fresh flower shop.
                     From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-            <div class="flex flex-wrap md:gap-x-5 gap-x-3 gap-y-8 justify-between">
+            <!-- ============= -->
+            <div class="flex flex-wrap md:gap-x-5 gap-x-4 gap-y-8">
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-1.png" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -75,13 +95,13 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">20 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-2.jpg" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -90,13 +110,13 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">25 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-3.jpg" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -106,13 +126,13 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">30 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-4.jpg" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -121,13 +141,13 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">28 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-5.jpg" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -137,13 +157,13 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">35 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-6.jpg" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -152,13 +172,13 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">50 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-7.jpg" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -168,13 +188,13 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">25 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
                 <div
-                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.375rem)] w-[calc(50%-0.375rem)] text-center flex items-center flex-col">
+                    class="lg:w-[calc(25%-1.25rem)] md:w-[calc((100%/3)-1.25rem)] sm:w-[calc(50%-0.5rem)] w-[calc(50%-0.5rem)] text-center flex items-center flex-col">
                     <img src="assets/images/sample-flowers/flower-8.jpg" alt="sample flower image"
                         class="w-full rounded-lg aspect-[1/1.2] object-cover">
                     <div class="mt-3 mb-4 grow flex flex-col">
@@ -183,15 +203,81 @@
                         <span class="font-bold md:text-[1.375rem] text-[1rem]">35 USD</span>
                     </div>
                     <div class="w-full">
-                        <button
+                        <button onclick="addToCart()"
                             class="cursor-pointer bg-orange-600 transition-all hover:bg-orange-800/90 px-4 py-3 text-white font-semibold w-full rounded-sm uppercase">Add
                             to Cart</button>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- plant lover section -->
+        <section class="max-w-6xl mx-auto px-3 md:mt-36 mt-20">
+            <div class="flex flex-wrap items-center">
+                <div class="lg:w-1/2 lg:pe-8 max-w-lg lg:max-w-full mx-auto relative">
+                    <img src="assets/images/flower-store.png" alt="flower store image" class="w-full">
+                    <img class="hidden lg:hidden absolute -top-16 -right-6 w-40 drop-shadow-md drop-shadow-gray-700 slow-spin animate-spin"
+                        src="assets/icons/trusted-badge.png" alt="">
+
+                    <img class="hidden lg:hidden absolute -top-12 right-[-8px] w-32 drop-shadow-md drop-shadow-gray-700"
+                        src="assets/icons/trusted-badge-inner.png" alt="">
+                </div>
+                <div class="lg:w-1/2 lg:ps-8 pt-8 lg:pt-0">
+                    <h3 class="mb-6 font-bold md:text-5xl sm:text-3xl text-2xl">
+                        Flower & Plants <span class="lg:block inline-block">Lover</span>
+                    </h3>
+                    <ul class="ms-8 list-disc text-gray-950/50 md:text-[1.375rem] text-[1rem]">
+                        <li class="mb-5">Indulge your senses with the beauty and fragrance of our fresh flower shop.
+                            From classic
+                            roses
+                            to exotic blooms, we offer a wide variety of fresh.</li>
+                        <li class="mb-5">Indulge your senses with the beauty and fragrance of our fresh flower shop.
+                            From classic
+                            roses
+                            to exotic blooms, we offer a wide variety of fresh.</li>
+                        <li>Indulge your senses with the beauty and fragrance of our fresh flower shop.
+                            From classic
+                            roses
+                            to exotic blooms, we offer a wide variety of fresh.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- latest deals section -->
+        <section class="max-w-6xl mx-auto px-3 md:mt-36 mt-20">
+
+            <div class="text-center mx-auto max-w-4xl mb-12">
+                <h3 class="md:text-5xl sm:text-3xl text-2xl mb-4  font-bold"><span
+                        class="text-orange-600 md:me-3 me-1.5">Latest</span>Deals</h3>
+                <p class="text-gray-950/50 md:text-[1.375rem] text-[1rem]">Indulge your senses with the beauty and
+                    fragrance of our
+                    fresh flower shop.
+                    From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            </div>
+            <div class="grid lg:grid-cols-3 lg:grid-rows-2 gap-x-6 gap-y-5 mx-auto">
+                <div
+                    class="rounded-xl lg:col-span-1 lg:row-span-1 py-16 text-white bg-[url(assets/images/deal-bloom.png)] bg-no-repeat bg-cover bg-center bg-gray-950/40 bg-blend-overlay flex justify-center items-center flex-col">
+                    <h3 class="text-xl font-bold mb-2">60% Off | Bloom Plant</h3>
+                    <a href="#" class="underline font-semibold">Shop Now</a>
+                </div>
+                <div
+                    class="lg:order 1 order-2 rounded-xl lg:col-span-2 lg:row-span-2 py-16 text-white bg-[url(assets/images/deal-zabo.png)] bg-no-repeat bg-cover bg-center bg-gray-950/40 bg-blend-overlay flex justify-center items-center flex-col">
+                    <h3 class="lg:text-5xl text-xl font-bold lg:mb-5 mb-3">25% Off | Zabo Plant</h3>
+                    <a href="#" class="underline font-semibold lg:text-3xl text-[1rem]">Shop Now</a>
+                </div>
+                <div
+                    class="order-1 lg:order-2 rounded-xl lg:col-span-1 lg:row-span-1 py-16 text-white bg-[url(assets/images/deal-ana.png)] bg-no-repeat bg-cover bg-center bg-gray-950/40 bg-blend-overlay flex justify-center items-center flex-col">
+                    <h3 class="text-xl font-bold mb-2">60% Off | Ana Plant</h3>
+                    <a href="#" class="underline font-semibold">Shop Now</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
+    <script>
+        function addToCart() {
+            alert("Flower Added to Card Successfully!")
+        }
+    </script>
 </body>
 
 </html>
